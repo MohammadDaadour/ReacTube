@@ -1,0 +1,252 @@
+* {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  background-color: white;
+  z-index: 2;
+}
+
+.pfp {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.nav {
+  width: 250px;
+  opacity: 0;
+}
+
+.actualBar {
+  position: fixed;
+  left: 0;
+  top: 10%;
+  z-index: 3;
+  background-color: white;
+  height: 90%;
+  width: 200px;
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+}
+
+ul li {
+  margin: 0px 0px 20px 0px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ul li:hover {
+  background-color: gray;
+  color: white;
+}
+
+.visited {
+  background-color: #d3d3d3;
+}
+
+ul li img {
+  pointer-events: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgb(192, 191, 191);
+}
+
+.search {
+  outline: none;
+  border: 1px solid gray;
+  padding: 0px 20px;
+  width: 400px;
+  height: 40px;
+}
+
+.vids {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.feed {
+  width: 100%;
+  height: 100%;
+}
+
+.videoCard {
+  width: 358px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.videoCard h4,
+p {
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.videoCard p {
+  color: gray;
+}
+
+.video {
+  margin: 10px 7px;
+}
+
+.vidImg {
+  width: 353px;
+  object-fit: contain;
+  position: relative;
+  bottom: 33px;
+  transition-duration: 0.4s;
+}
+
+.imgContainer {
+  height: 199px;
+  width: 353px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition-duration: 0.4s;
+}
+
+.vidImg:hover {
+  transform: scale(1.05);
+}
+.channel-title:hover {
+  text-decoration:underline;
+}
+.imgContainer:hover {
+  border-radius: 0px;
+}
+
+.channelCard {
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.channelImg {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.channelContainer {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  top: 60px;
+  pointer-events: none;
+}
+
+.channelPage {
+  display: flex;
+}
+
+.youtubeLogo {
+  width: 50px;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
+}
+
+.nav img,
+.actualBar img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.player-container {
+  width: 100%;
+  height: 70vh;
+  background: gray;
+}
+
+.player-container h3,
+.player-container h5 {
+  padding: 10px 0px 0px 20px;
+}
+
+h5 {
+  color: rgb(75, 74, 74);
+}
+
+.related {
+  margin: 0px;
+  padding: 0px;
+}
+
+.related-sec {
+  padding-top:20px;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+@media (max-width: 662px) {
+  .search {
+    width: 200px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .player-container {
+    height: 26vh;
+  }
+
+  .actualBar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+  }
+
+  .sidebar-toggle {
+    position: absolute;
+    top: 65px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inherit;
+  }
+
+  .actualBar.open {
+    left: 0;
+  }
+
+  .Backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+}

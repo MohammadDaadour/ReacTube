@@ -1,0 +1,9 @@
+export const youtubeLogo = require("./images/youtubeLogo.png");
+export const pfp = require("./images/pfp.jpg");
+export const homeLogo = require("./images/HomeLogo.png");
+export const musicLogo = require("./images/musicLogo.png")
+export const gamingLogo = require("./images/gamingLogo.png")
+export const eduLogo = require("./images/eduLogo.png")
+export const sportLogo = require("./images/sportLogo.png")
+export const search =  require("./images/search.png")
+export const menu = require("./images/menu.png")
