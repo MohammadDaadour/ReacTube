@@ -31,7 +31,7 @@ const Navbar = ({ setCurrentSection }) => {
           <Links
             className="visited"
             setCurrentSection={setCurrentSection}
-            direction="video"
+            direction="tech"
             logo={homeLogo}
             name="Home"
           />
