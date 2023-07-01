@@ -204,12 +204,9 @@ h5 {
   .search {
     width: 180px;
   }
-  .search-container button {
-    margin-right: 0px;
-  }
   .logoo {
     position: relative;
-    right: 10px;
+    right: 7px;
   }
 
   .nav {
