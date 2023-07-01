@@ -202,7 +202,14 @@ h5 {
 
 @media (max-width: 662px) {
   .search {
-    width: 200px;
+    width: 180px;
+  }
+  .search-container button {
+    margin-right: 0px;
+  }
+  .logoo {
+    position: relative;
+    right: 10px;
   }
 
   .nav {
