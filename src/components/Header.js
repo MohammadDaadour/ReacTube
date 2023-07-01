@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <header>
       <Link to="/">
-        <div className="slogan">
+        <div className="slogan logoo">
           <img alt="" src = {youtubeLogo} className = "youtubeLogo" />
           <h4>ReacTube</h4>
         </div>
