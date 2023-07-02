@@ -254,3 +254,13 @@ h5 {
     z-index: 2;
   }
 }
+@media(max-width:393px){
+  .feed {
+    position:relative;
+    left:2px;
+  }
+  .searched {
+    position:relative;
+    left:3px;
+  }
+}
