@@ -11,6 +11,8 @@ import {
 } from "./Logos";
 import { useState } from "react";
 import Backdrop from "./Backdrop";
+import ScrollToTop from "./ScrollToTop";
+
 
 const Navbar = ({ setCurrentSection }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +75,7 @@ const Navbar = ({ setCurrentSection }) => {
         </ul>
       </div>
       {isOpen && <Backdrop onClick={toggleSidebar} />}
+      <ScrollToTop/>
     </div>
   );
 };
