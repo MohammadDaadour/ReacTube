@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 const Section = () => {
   const [videos, setVideos] = useState([]);
-  const [currentSection, setCurrentSection] = useState("tech");
+  const [currentSection, setCurrentSection] = useState("socialmedia");
 
   useEffect(() => {
     fetching(`search?part=snippet&q=${currentSection}`).then((data) => {
