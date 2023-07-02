@@ -16,7 +16,7 @@ const SearchComponent = () => {
 
   return (
     <section>
-      <div className="feed">
+      <div className="feed searched">
         <Videos videos={videos} />
       </div>
     </section>
