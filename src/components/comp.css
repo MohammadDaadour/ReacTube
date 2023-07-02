@@ -222,7 +222,7 @@ h5 {
     top: 0;
     left: -250px;
     width: 250px;
-    height: 100vh;
+    height: 200vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: left 0.3s ease-in-out;
   }
